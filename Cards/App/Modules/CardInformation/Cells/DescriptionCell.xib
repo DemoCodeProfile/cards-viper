@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="DescriptionCell" customModule="Cards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xp-tc-Mre">
+                        <rect key="frame" x="16" y="8" width="288" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5D-of-U4r">
+                        <rect key="frame" x="16" y="16" width="288" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="7xp-tc-Mre" secondAttribute="trailing" constant="16" id="Ghr-pK-Oak"/>
+                    <constraint firstItem="7xp-tc-Mre" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QNO-mJ-WrN"/>
+                    <constraint firstAttribute="bottom" secondItem="A5D-of-U4r" secondAttribute="bottom" constant="8" id="U4E-qw-gfe"/>
+                    <constraint firstItem="7xp-tc-Mre" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="cKa-t4-GZ8"/>
+                    <constraint firstItem="A5D-of-U4r" firstAttribute="trailing" secondItem="7xp-tc-Mre" secondAttribute="trailing" id="dQL-9m-PBG"/>
+                    <constraint firstItem="A5D-of-U4r" firstAttribute="top" secondItem="7xp-tc-Mre" secondAttribute="bottom" constant="8" id="nwV-UB-P0N"/>
+                    <constraint firstItem="A5D-of-U4r" firstAttribute="leading" secondItem="7xp-tc-Mre" secondAttribute="leading" id="s6O-b4-89z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="A5D-of-U4r" id="nk1-NS-oVi"/>
+                <outlet property="titleLabel" destination="7xp-tc-Mre" id="PE5-Kf-zcy"/>
+            </connections>
+            <point key="canvasLocation" x="111.59420289855073" y="141.29464285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

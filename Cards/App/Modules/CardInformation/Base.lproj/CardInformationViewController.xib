@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardInformationViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="Kn8-UT-eRb" id="RQD-JB-xi8"/>
+                <outlet property="errorLabel" destination="d7B-wV-2FH" id="Vqi-iC-Ne2"/>
+                <outlet property="plugView" destination="bBv-vo-nHi" id="ilZ-xA-oer"/>
+                <outlet property="tableView" destination="fdu-OZ-eBM" id="xdY-5Z-ba8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fdu-OZ-eBM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Kn8-UT-eRb">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                    <color key="color" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBv-vo-nHi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KG8-gr-2CL">
+                            <rect key="frame" x="32" y="318.5" width="311" height="30"/>
+                            <state key="normal" title="Try again">
+                                <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tryAgain:" destination="-1" eventType="touchUpInside" id="gzX-Uc-vuU"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7B-wV-2FH">
+                            <rect key="frame" x="32" y="310" width="311" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="KG8-gr-2CL" firstAttribute="leading" secondItem="bBv-vo-nHi" secondAttribute="leading" constant="32" id="5Iw-W7-IrE"/>
+                        <constraint firstItem="KG8-gr-2CL" firstAttribute="top" secondItem="d7B-wV-2FH" secondAttribute="bottom" constant="8.5" id="Hiq-5S-r3P"/>
+                        <constraint firstAttribute="trailing" secondItem="KG8-gr-2CL" secondAttribute="trailing" constant="32" id="LWh-Pg-Q1G"/>
+                        <constraint firstAttribute="trailing" secondItem="d7B-wV-2FH" secondAttribute="trailing" constant="32" id="SSa-jN-4kP"/>
+                        <constraint firstItem="d7B-wV-2FH" firstAttribute="leading" secondItem="bBv-vo-nHi" secondAttribute="leading" constant="32" id="c2m-1x-Voy"/>
+                        <constraint firstItem="KG8-gr-2CL" firstAttribute="centerY" secondItem="bBv-vo-nHi" secondAttribute="centerY" id="xQS-mC-yWg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bBv-vo-nHi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6nn-ET-Fpg"/>
+                <constraint firstItem="fdu-OZ-eBM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hbv-Hz-C5F"/>
+                <constraint firstItem="fdu-OZ-eBM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RuC-Nu-LpB"/>
+                <constraint firstAttribute="bottom" secondItem="bBv-vo-nHi" secondAttribute="bottom" id="UkV-M1-n44"/>
+                <constraint firstAttribute="trailing" secondItem="fdu-OZ-eBM" secondAttribute="trailing" id="Wdh-Fr-DxX"/>
+                <constraint firstAttribute="bottom" secondItem="fdu-OZ-eBM" secondAttribute="bottom" id="akz-Dp-0kV"/>
+                <constraint firstItem="Kn8-UT-eRb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gX0-Zh-TYS"/>
+                <constraint firstItem="bBv-vo-nHi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kfp-kK-0fV"/>
+                <constraint firstAttribute="trailing" secondItem="bBv-vo-nHi" secondAttribute="trailing" id="mVq-ZK-ywj"/>
+                <constraint firstItem="Kn8-UT-eRb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sUc-xA-dNr"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="152.47376311844079"/>
+        </view>
+    </objects>
+</document>

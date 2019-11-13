@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Card number"; ObjectID = "06S-H4-8P8"; */
+"06S-H4-8P8.text" = "Card number";
+
+/* Class = "UIButton"; normalTitle = "Check card"; ObjectID = "23M-99-Fjy"; */
+"23M-99-Fjy.normalTitle" = "Check card";
+
+/* Class = "UIButton"; normalTitle = "Card information"; ObjectID = "mf2-1W-y7t"; */
+"mf2-1W-y7t.normalTitle" = "Card information";
